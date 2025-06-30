@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습장</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined); 
+    * {margin: 0;padding: 0;box-sizing: border-box;}
+    .body {border: 1px solid #ddd;margin: 5px;padding: 5px;overflow: hidden;width: 90vw;height: 90vh;
+        display: flex;justify-content: center;align-items: center;flex-direction: column;}
+
+
+    section {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 5px;
+
+        grid:
+        "a b b c d" 1fr
+        "e f f f d" 0.4fr
+        "e f f f i" 0.1fr
+        "e f f f i" 0.5fr
+        "g g h h i" 1fr
+        / 1.5fr 0.7fr 0.3fr 1fr 1.5fr;
+
+        div {
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {width: 100%;}
+
+            &:nth-child(1) {grid-area: a;}
+            &:nth-child(2) {grid-area: b;}
+            &:nth-child(3) {grid-area: c;}
+            &:nth-child(4) {grid-area: d;}
+            &:nth-child(5) {grid-area: e;}
+            &:nth-child(6) {grid-area: f;}
+            &:nth-child(7) {grid-area: g;}
+            &:nth-child(8) {grid-area: h;}
+            &:nth-child(9) {grid-area: i;}
+        }
+    }
+
+
+
+  </style>
+</head>
+<body>
+    <div class="body">
+
+        <section>
+            <div><img src="https://picsum.photos/seed/a/250/250"></div>
+            <div><img src="https://picsum.photos/seed/b/300/400"></div>
+            <div><img src="https://picsum.photos/seed/c/300/400"></div>
+            <div><img src="https://picsum.photos/seed/d/400/400"></div>
+            <div><img src="https://picsum.photos/seed/e/300/300"></div>
+            <div><img src="https://picsum.photos/seed/f/400/300"></div>
+            <div><img src="https://picsum.photos/seed/g/500/300"></div>
+            <div><img src="https://picsum.photos/seed/h/300/400"></div>
+            <div><img src="https://picsum.photos/seed/i/300/500"></div>
+        </section>
+
+    </div>
+</body>
+<script>
+</script>
+</html>
